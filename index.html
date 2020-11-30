@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Day</title>
+</head>
+<body>
+    <button style="margin-left: 670px; background-color: burlywood; color: black; width: 150px; height: 50px;"  onclick=" music.play(), setTimeout(myfunction, 7000), setTimeout(myfunction2, 10000), setTimeout(myfunction3, 15000),setTimeout(myfunction4, 20000),setTimeout(myfunction5, 25000),setTimeout(myfunction6, 25000), setInterval(myfunction7, 1000)">Magic Button</button>
+        <h1 style="text-align: center;" id="1"></h1>
+        <h1 style="text-align: center;" id="3"></h1>
+        <h1 style="text-align: center;"  id="2"></h1>
+        <h1 style="text-align: center;"  id="4"></h1>
+        <h1 style="text-align: center;"  id="5"></h1>
+        <img id="6" style="display: none; margin-left: 500px; width: 200px; height: 200px;"  src="https://i.pinimg.com/originals/67/a3/cd/67a3cd84c250a3857566b16c7d762669.png" alt="">
+        <audio id="a" src="Happy - Pharrell Williams 🎵.mp3"></audio>
+</body>
+<script>
+    let h =  document.getElementById('1')
+    let color =  document.getElementById('2')
+    let h2 =  document.getElementById('3')
+    let h3 =  document.getElementById('4')
+    let h4 =  document.getElementById('5')
+    let pic = document.getElementById('6')
+    let music = document.getElementById('a')
+    function myfunction() {
+        console.log(h)
+        h.innerHTML = 'Hello Sir!'
+        
+   
+    }
+    function myfunction2() {
+        h2.innerHTML = 'This is Shivansh Speaking'
+    }
+    function myfunction3() {
+        color.innerHTML = 'Happy'
+    }
+    function myfunction4() {
+        h3.innerHTML = " Teacher's "
+    }
+    function myfunction5() {
+        h4.innerHTML = "Day"
+    }
+    function myfunction6() {
+       pic.style.display='initial'
+       setInterval(myfunction8, 1000)
+       function myfunction8(){
+        m = parseInt(Math.random()*700)
+    n = parseInt(Math.random()*700)
+    var el = document.getElementById('6');
+el.style.position = "absolute";
+el.style.left = m + 'px'; 
+el.style.top = n + 'px'; 
+}
+       }
+    
+    function myfunction7(){
+        let x = Math.random()*256
+    let y = Math.random()*256
+    let z = Math.random()*256
+    let bgColor = "rgb(" + x + "," + y + "," + z + ")";
+    document.body.style.background = bgColor;
+    }
+
+
+
+</script>
+</html>
